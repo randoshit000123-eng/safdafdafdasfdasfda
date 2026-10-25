@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "de.challengemod.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "BlindnessFogMixin",
+    "SpriteContentsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

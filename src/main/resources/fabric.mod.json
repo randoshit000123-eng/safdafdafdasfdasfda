@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "challengemod",
+  "version": "${version}",
+  "name": "Challenge Mod",
+  "description": "Multiplayer-Challenge: /blind, /mute, /deaf, /challange start - mit Rollen-Anzeige ueber dem Kopf.",
+  "authors": ["Challenge"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.challengemod.ChallengeMod"],
+    "client": ["de.challengemod.client.ChallengeModClient"],
+    "voicechat": ["de.challengemod.voicechat.ChallengeVoicechatPlugin"]
+  },
+  "mixins": [
+    {
+      "config": "challengemod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "voicechat": "*"
+  }
+}
